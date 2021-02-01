@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"email\": \"manfri@test.com\",\n    \"password\": \"pass\",\n    \"name\": \"Manfredi\",\n    \"surname\": \"Pistone\",\n    \"number\": \"0000000000\"\n}",
+					"raw": "{\n    \"email\": \"manfri@test.com\",\n    \"password\": \"pass\",\n    \"name\": \"Manfredi\",\n    \"surname\": \"P\",\n    \"number\": \"0000000000\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
