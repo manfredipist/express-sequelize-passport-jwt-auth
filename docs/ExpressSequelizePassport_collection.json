@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "95c11798-d989-400b-87c8-0b39bec01af8",
+		"name": "ExpressSequelizePassport",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"manfri@test.com\",\n    \"password\": \"pass\",\n    \"name\": \"Manfredi\",\n    \"surname\": \"Pistone\",\n    \"number\": \"0000000000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/1.0/basic/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"1.0",
+						"basic",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"manfri@test.com\",\n    \"password\": \"pass\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/1.0/basic/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"1.0",
+						"basic",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AuthCheck",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibWFuZnJpQHRlc3QuY29tIn0sImlhdCI6MTYxMjEwODIxNSwiZXhwIjoxNjQzNjQ0MjE1fQ.RmqpPbMJuVZFSwItu7bZXe11zATFeKAATBmVUQ-bmnU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9000/api/1.0/auth/secret",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"1.0",
+						"auth",
+						"secret"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
