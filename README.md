@@ -5,7 +5,6 @@ Authentication boilerplate based on ExpressJS, Sequelize, Passport, JsonWebToken
 
 -   [Install](#install)
 -   [API](#api)
--   [License](#license)
 -   [Donate](#donate)
 
 ## Getting Started - install
@@ -76,12 +75,6 @@ node index.js
 </table>
 
 You can download an example of Postman collection [here](docs/express-sequelize-passport_collection.json)
-
-
-## License
-express-sequelize-passport-jwt-auth is licensed under the
-
-GNU Affero General Public License v3.0
 
 ## Donate
 
